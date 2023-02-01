@@ -25,7 +25,9 @@ function TodoList() {
   }
 
   function clearCompleted() {
-    setTodos(todos.filter((todo) => !todo.isCompleted));
+    const newTodos = todos.filter((todo) => !todo.isCompleted);
+    setTodos(newTodos);
+    localStorage.setItem("todos", JSON.stringify(newTodos));
   }
 
   const uncompletedTodos = todos.filter((todo) => !todo.isCompleted).length;
