@@ -1,0 +1,10 @@
+.Header {
+  background-color: white;
+  margin: 16px;
+  margin-bottom: 0;
+  padding: 16px 20px;
+}
+
+.Link {
+  text-decoration: none;
+}
